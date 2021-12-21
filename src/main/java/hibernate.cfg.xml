@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE hibernate-configuration SYSTEM
 	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
@@ -13,6 +13,12 @@
 		<property name = "show_sql">true</property>
 		<mapping class = "com.tut.Student"/>
 		<mapping class = "com.tut.Address"/>
+		<mapping class = "com.map.Question"/>
+		<mapping class = "com.map.Answer"/>
+		<mapping class = "com.map.Question_1"/>
+		<mapping class = "com.map.Answer_1"/>
+		<mapping class = "com.map1.Emp"/>
+		<mapping class = "com.map1.Project"/>
 	</session-factory>
 	
 </hibernate-configuration>	

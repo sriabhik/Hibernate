@@ -1,5 +1,5 @@
 package com.tut;
-
+import java.util.Arrays;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -12,6 +12,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
+
 
 @Entity
 @Table(name = "student_address")
@@ -30,6 +31,7 @@ public class Address {
 	private double x;
 	@Temporal(TemporalType.DATE)
 	private Date addedDate;
+	@Lob
 	private byte[] image;
 	public int getAddressId() {
 		return addressId;
@@ -86,8 +88,11 @@ public class Address {
 	}
 	public Address() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
-	
-
+	@Override
+	public String toString(){
+		return "Address [addressId=" + addressId + ", Street=" + Street + ", City=" + City + ", isOpen=" + isOpen
+				+ ", x=" + x + ", addedDate=" + addedDate + ", image=" + Arrays.toString(image) + "]";
+	}
 }
