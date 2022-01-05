@@ -1,4 +1,4 @@
-package com.map;
+package com.mapcopy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,15 +50,15 @@ public class MapDemo_1 {
 		session.save(ans1);
 		session.save(ans2);
 		
-		
-		
-		
 		Transaction tx = session.beginTransaction();
 		tx.commit();
-		Question_1 qq = (Question_1)session.get(Question_1.class,1);
-		System.out.print(qq);
-		session.close();
 		
+		
+		Question_1 qq = (Question_1)session.get(Question_1.class,1);
+		
+		System.out.print(qq);
+		
+		session.close();
 		factory.close();
 	}
 

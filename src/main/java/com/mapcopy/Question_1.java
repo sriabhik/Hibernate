@@ -1,9 +1,11 @@
-package com.map;
+package com.mapcopy;
 
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
@@ -13,7 +15,7 @@ public class Question_1 {
 	@Id
 	private int questionId;
 	private String question;
-	@OneToMany 
+	@OneToMany(mappedBy = "ques",fetch = FetchType.EAGER ,cascade = CascadeType.ALL)
 	private List<Answer_1>  answer;
 	public int getQuestionId() {
 		return questionId;
@@ -43,6 +45,11 @@ public class Question_1 {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	@Override
+	public String toString() {
+		return "Question_1 [questionId=" + questionId + ", question=" + question + ", answer=" + answer + "]";
+	}
+	
 
 	
 	

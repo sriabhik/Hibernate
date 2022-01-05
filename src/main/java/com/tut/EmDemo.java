@@ -38,10 +38,20 @@ public class EmDemo {
         certificate1.setDuration("1 Months");
         
         student2.setCerti(certificate1);
+        
+        Student student3 = new Student();
+		student3.setId(1);
+        student3.setName("Pawan Kumar Srivastava");
+        student3.setCity("Kota");
+      
+        
+        Certificate certificate2 = new Certificate();
+        certificate2.setCourse("Program");
+        certificate2.setDuration("3 Months");
         //Object save
         s.save(student1);
         s.save(student2);
-       
+        s.save(student3);
         tx.commit();
         s.close();
 		factory.close();

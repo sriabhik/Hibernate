@@ -23,7 +23,7 @@ public class App
         //STudent class
         Student st = new Student();
         st.setId(32);
-        st.setName("Srishti Priya");
+        st.setName("Priya");
         st.setCity("Patna");
        
         System.out.println(st);

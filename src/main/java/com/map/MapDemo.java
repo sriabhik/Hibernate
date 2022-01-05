@@ -16,34 +16,46 @@ public class MapDemo {
 		
 		Session session = factory.openSession();
 		//creating question
-		Question q1 = new Question();
-		q1.setQuestionId(1);
-		q1.setQuestion("Explain java?");
+//		Question q1 = new Question();
+//		q1.setQuestionId(1);
+//		q1.setQuestion("Explain java?");
+//		
+//		
+//		Answer ans = new Answer();
+//		ans.setAnswerId(11);
+//		ans.setAnswer("Programming Lan");
+//		
+//		ans.setQues(q1);
+//		q1.setAnswer(ans);
 		
+//		session.save(q1);
+//		session.save(ans);
 		
-		Answer ans = new Answer();
-		ans.setAnswerId(11);
-		ans.setAnswer("Programming Lan");
+//		Question q2 = new Question();
+//		q2.setQuestionId(2);
+//		q2.setQuestion("Abhishek?");
+//		
+//		Answer ans1 = new Answer();
+//		ans1.setAnswerId(22);
+//		ans1.setAnswer("srishti");
+//		ans1.setQues(q2);
+//		q2.setAnswer(ans1);
+//		
+//		session.save(q2);
+//		session.save(ans1);
 		
-		ans.setQues(q1);
-		q1.setAnswer(ans);
+		Question q3 = new Question();
+		q3.setQuestionId(12);
+		q3.setQuestion("maths?");
 		
-		session.save(q1);
-		session.save(ans);
+		Answer ans11 = new Answer();
+		ans11.setAnswerId(212);
+		ans11.setAnswer("learn");
+		ans11.setQues(q3);
+		q3.setAnswer(ans11);
 		
-		Question q2 = new Question();
-		q2.setQuestionId(2);
-		q2.setQuestion("Abhishek?");
-		
-		Answer ans1 = new Answer();
-		ans1.setAnswerId(22);
-		ans1.setAnswer("srishti");
-		ans1.setQues(q2);
-		q2.setAnswer(ans1);
-		
-		session.save(q2);
-		session.save(ans1);
-		
+		session.save(q3);
+		session.save(ans11);
 		
 		Transaction tx = session.beginTransaction();
 		tx.commit();

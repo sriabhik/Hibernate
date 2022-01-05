@@ -22,16 +22,16 @@ public class MappingDemo {
 		Emp e2 = new Emp();
 		
 		e1.setEid(1);
-		e1.setName("Kinu");
+		e1.setName("Kin");
 		
 		e2.setEid(2);
-		e2.setName("Srishti");
+		e2.setName("Srisht");
 		
 		Project p1 = new Project();
 		Project p2 = new Project();
 		
 		p1.setPid(11);
-		p1.setProjectname("Web App");
+		p1.setProjectname("We");
 		
 		p2.setPid(22);
 		p2.setProjectname("ChatBox");

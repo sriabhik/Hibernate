@@ -1,4 +1,4 @@
-package com.map;
+package com.mapcopy;
 
 
 import javax.persistence.Entity;
@@ -51,6 +51,7 @@ public class Answer_1 {
 		// TODO Auto-generated constructor stub
 	}
 
+	
 	
 	
 }
